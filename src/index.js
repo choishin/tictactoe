@@ -23,9 +23,7 @@ function Square(props) {
         squares: squares,
         xIsNext: !this.state.xIsNext,    });
     }
-    renderSquare(i) {
-      return <Square value={i} />;
-    }
+
     render() {
       const status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
       return (
